@@ -30,9 +30,9 @@ graphs2 ['h'] = Histogram('python_request_duration_seconds1', 'Histogram for the
 #graphs ['h'] = Histogram('python_request_duration_seconds', 'Histogram for the duration in seconds.')
 
 
-@app.route('/Welcome')
+@app.route('/')
 def hello_world():
-    return {'abc':'Hello, World!'}
+    return {'Welcome message':'Hello, World!'}
 
 
 @app.route('/diabeties_classifier')
